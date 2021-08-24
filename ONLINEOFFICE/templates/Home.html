@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #643E46FF !important;
+		}
+    .text-center {
+      color: white;
+    }
+    </style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+</head>
+
+<body>
+    {%  include 'navbar.html' %}
+
+    <div class="row">
+      <div class="col-md-7">
+        <img src="{% static 'media/Location map.jpg'%}" alt="Flowers in Chania" width="560" height="500">
+      </div>
+      <div class="col-md-4">
+        <div class="text-center" >
+          <h1>Parokya ng San Lorenzo Location</h1>
+          <p> </p>
+      </div>
+    </div>
+</body>
+
+</html>
